@@ -1,65 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Swati – UI/UX Designer</title>
-  <link rel="stylesheet" href="./style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flora Sheen - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Swati</h1>
-    <p>UI/UX Designer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="logo">Personal</div>
+    <nav class="nav" id="navbar">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
     </nav>
+    <a href="#" class="btn">Resume <i class="fa fa-download"></i></a>
+    <div class="menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>UI/UX Designer with a background in architecture and a strong passion for crafting intuitive, user-centered digital experiences.</p>
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello I’am <span>Flora Sheen.</span><br>Frontend <span class="highlight">Developer</span> Based in <span>India.</span></h1>
+      <p>I’m Flora Sheen, a passionate Frontend Developer helping brands build digital experiences.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="assets/Banner.svg" alt="Profile Illustration">
+    </div>
   </section>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="projects">
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="skills section">
+  <h2>My <span>Skills</span></h2>
+  <div class="skills-grid">
+    <div class="skill"><i class="devicon-git-plain colored"></i><p>Git</p></div>
+    <div class="skill active"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+    <div class="skill"><i class="devicon-sass-original colored"></i><p>Sass/Scss</p></div>
+    <div class="skill"><i class="devicon-react-original colored"></i><p>ReactJs</p></div>
+    <div class="skill"><i class="devicon-storybook-plain colored"></i><p>Storybook</p></div>
+    <div class="skill"><i class="devicon-nodejs-plain colored"></i><p>NodeJs</p></div>
+    <div class="skill"><i class="devicon-typescript-plain colored"></i><p>TypeScript</p></div>
+    <div class="skill"><i class="devicon-sanity-plain colored"></i><p>Sanity CMS</p></div>
+  </div>
+</section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="experience section dark">
+    <h2>My <span>Experience</span></h2>
+    <div class="exp-card">
+      <h3><i class="fab fa-google"></i> Lead Software Engineer at Google</h3>
+      <span>Nov 2019 - Present</span>
+      <p>Developed innovative solutions at scale optimizing user experience...</p>
+    </div>
+    <div class="exp-card">
+      <h3><i class="fab fa-youtube"></i> Software Engineer at YouTube</h3>
+      <span>Jan 2017 - Dec 2019</span>
+      <p>Worked on large-scale video processing pipelines improving scalability...</p>
+    </div>
+    <div class="exp-card">
+      <h3><i class="fab fa-apple"></i> Junior Software Engineer at Apple</h3>
+      <span>Jan 2015 - Dec 2017</span>
+      <p>Collaborated on UI features ensuring seamless iOS integration...</p>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ME ===== -->
+  <section id="about" class="about section">
+    <div class="about-img">
+      <img src="https://via.placeholder.com/300x300" alt="About Illustration">
+    </div>
+    <div class="about-text">
+      <h2>About <span>Me</span></h2>
+      <p>I’m a passionate frontend developer with a strong background in building user-friendly applications...</p>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="projects section dark">
+    <h2>My <span>Projects</span></h2>
+    <div class="project-grid">
       <div class="project">
-        <h3>Project Title 1</h3>
-        <p>Description of the project goes here.</p>
+        <img src="https://via.placeholder.com/400x250" alt="Crypto App">
+        <h3>01 Crypto Screener Application</h3>
+        <p>Designed and developed a live crypto screening app...</p>
       </div>
       <div class="project">
-        <h3>Project Title 2</h3>
-        <p>Description of the project goes here.</p>
+        <img src="https://via.placeholder.com/400x250" alt="Ecommerce">
+        <h3>02 Euphoria Ecommerce Template</h3>
+        <p>Built a responsive clothing store ecommerce website template...</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x250" alt="Blog Template">
+        <h3>03 Blog Website Template</h3>
+        <p>Created a blog template with CMS integration...</p>
       </div>
     </div>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Wireframing</li>
-      <li>Prototyping</li>
-      <li>User Research</li>
-      <li>Figma / Adobe XD</li>
-      <li>Responsive Design</li>
-    </ul>
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonial section">
+    <h2>My <span>Testimonial</span></h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">⭐ "Great work, highly recommend!" - Ewan Shah</div>
+      <div class="testimonial-card">⭐ "Amazing attention to detail!" - Flora Sheen</div>
+      <div class="testimonial-card">⭐ "Outstanding collaboration." - Ewan Shah</div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact section dark">
+    <h2>Let’s <span>Talk</span> for Something Special</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <input type="text" placeholder="Your Subject">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Get in Touch</button>
     </form>
+    <p>Email: youremail@gmail.com | Phone: 1234567890</p>
   </section>
 
-  <footer>
-    <p>© 2025 Swati. All rights reserved.</p>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 Personal | Made in Figma</p>
   </footer>
 
   <script src="script.js"></script>
