@@ -19,11 +19,11 @@ const animatedElements = document.querySelectorAll(
 
 const appearOptions = {
   threshold: 0.2,
-  rootMargin: "0px 0px -50px 0px"
+  rootMargin: "0px 0px -50px 0px",
 };
 
 const appearOnScroll = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
 
     // Add visible + stagger effect
@@ -42,5 +42,6 @@ const appearOnScroll = new IntersectionObserver((entries, observer) => {
 }, appearOptions);
 
 // Observe each element
-animatedElements.forEach(el => { appearOnScroll.observe(el);
+animatedElements.forEach((el) => {
+  appearOnScroll.observe(el);
 });
